@@ -28,85 +28,91 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/eriks-portfolio" # the subpath of your site, e.g. /blog
-url: "https://eriksolis.github.io/eriks-portfolio/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://eriksolis.github.io/eriks-portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  eriksolis
-layout: single
 locale: en-US
+icon: /assets/images/strum.jpg
+
+include: ["_pages"]
 
 
-# defaults:
-#   # _posts
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: single
-#       author_profile: true
-#       read_time: true
-#       comments: false
-#       share: false
-#       related: false
+defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      breadcrumbs: true
+      author_profile: false
+      share: false
+      
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
+
+  - scope:
+      path: ""
+      type: collection
+    values:
+      breadcrumbs: true
+
 
 
 author:
-  name     :  Erik Solis
-  avatar   : /assets/images/strum.jpg
-  bio      : Aspiring Game Dev.
-  location : San Jose, USA
-  links:
-    - label: LinkedIn
-      icon: fab fa-linkedin
-      url: https://www.linkedin.com/in/erik-solis-396a2b331/
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com/eriksolis
-
-
-# author:
-#   name: "Your Name"
-#   avatar: "/assets/images/strum.jpg"
-#   bio: "I am an **amazing** person." # Note: Markdown is allowed
-#   location: "Somewhere"
-#   links:
-#     - label: "Made Mistakes"
-#       icon: "fas fa-fw fa-link"
-#       url: "https://mademistakes.com"
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-square-x-twitter"
-#       url: "https://twitter.com/mmistakes"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/mmistakes"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/mmistakes"
+    name     :  Erik Solis
+    avatar   : /assets/images/strum.jpg
+    bio      : "Game Dev.\n  B.S (CS) Conc. Game Development"
+    location : San Jose, USA
+    links:
+        - label: LinkedIn
+          icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/erik-solis-396a2b331/
+        - label: GitHub
+          icon: fab fa-fw fa-github
+          url: https://github.com/eriksolis
+        - label: Itch.io
+          icon: fab fa-fw fa-itch-io
+          url: https://strumboid.itch.io/
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
-  since: "2013"
+      url: "https://github.com/eriksolis"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/erik-solis-396a2b331/"
+    - label: Itch.io
+      icon: fab fa-fw fa-itch-io
+      url: https://strumboid.itch.io/
+  since: "2026"
 
     
-
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Build settings
 # theme: minima
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
