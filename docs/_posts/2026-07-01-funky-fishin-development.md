@@ -12,4 +12,6 @@ permalink: /:categories/:title/
 ---
 
 
-test a chungus
+under construction! please come back at another time. :construction_worker:
+
+<!-- Throughout the quarter, we had playtesting sessions within the class where other groups would playtest our game and give feedback. Having other like-minded students give feedback on your game was honestly very nerveracking but exciting at the same time. It definitely helped as we found that the detection of the swing wasn't as lenient meaning that even if players swung very fast in the direction it still wouldn't register. -->

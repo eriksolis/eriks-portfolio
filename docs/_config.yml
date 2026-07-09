@@ -44,7 +44,7 @@ defaults:
     values:
       layout: single
       breadcrumbs: true
-      author_profile: false
+      author_profile: true
       share: false
       
 
@@ -71,8 +71,11 @@ author:
     name     :  Erik Solis
     avatar   : /assets/images/strum.jpg
     bio      : "Game Dev.\n  B.S (CS) Conc. Game Development"
-    location : San Jose, USA
+    location : San Jose, CA
     links:
+        - label: Email
+          icon: fa-regular fa-fw fa-envelope
+          url: mailto:eriksolisschool@gmail.com
         - label: LinkedIn
           icon: fab fa-linkedin
           url: https://www.linkedin.com/in/erik-solis-396a2b331/
@@ -113,6 +116,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.
