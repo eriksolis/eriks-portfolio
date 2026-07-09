@@ -18,21 +18,105 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Erik Solis | Game Developer
+title: Erik Solis
+name: Erik Solis
+description: Game Dev blog/portfolio for Erik Solis!
 email: eriksolis1024@gmail.com
+# logo: "/assets/images/strum.jpg"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/eriks-portfolio" # the subpath of your site, e.g. /blog
-url: "https://eriksolis.github.io/eriks-portfolio/" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+url: "https://eriksolis.github.io/eriks-portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  eriksolis
+locale: en-US
+icon: /assets/images/strum.jpg
+
+include: ["_pages"]
+
+
+defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      breadcrumbs: true
+      author_profile: true
+      share: false
+      
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: false
+
+  - scope:
+      path: ""
+      type: collection
+    values:
+      breadcrumbs: true
+
+
+
+author:
+    name     :  Erik Solis
+    avatar   : /assets/images/strum.jpg
+    bio      : "Game Dev.\n  B.S (CS) Conc. Game Development"
+    location : San Jose, CA
+    links:
+        - label: Email
+          icon: fa-regular fa-fw fa-envelope
+          url: mailto:eriksolisschool@gmail.com
+        - label: LinkedIn
+          icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/erik-solis-396a2b331/
+        - label: GitHub
+          icon: fab fa-fw fa-github
+          url: https://github.com/eriksolis
+        - label: Itch.io
+          icon: fab fa-fw fa-itch-io
+          url: https://strumboid.itch.io/
+
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/eriksolis"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/erik-solis-396a2b331/"
+    - label: Itch.io
+      icon: fab fa-fw fa-itch-io
+      url: https://strumboid.itch.io/
+  since: "2026"
+
+    
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Build settings
-theme: minima
+# theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.
