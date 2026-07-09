@@ -42,7 +42,9 @@ Overall, this game taught me a lot, especially having to optimize so many settin
 {% include gallery caption="In-game screenshots." %}
 
 
-{% include figure popup=true image_path="/assets/images/funky_fishin_swing.gif" alt="gameplay footage" caption=""%}
+<!-- {% include figure popup=true image_path="/assets/images/funky_fishin_swing.gif" alt="gameplay footage" caption=""%} -->
+
+{% include figure popup=true image_path="/assets/images/funky_fishin_main_gameplay.gif" alt="gameplay footage" caption=""%}
 
 {% include figure popup=true image_path="/assets/images/funky_fishin_failure-crop.gif" alt="gameplay footage" caption=""%}
 
