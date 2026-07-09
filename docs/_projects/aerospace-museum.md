@@ -49,11 +49,11 @@ During my last quarter at Cal Poly, we were able to go on a field trip to conduc
 
 Ultimately, the participants at the museum gave us a lot of feedback on the experience and showed that project still has a long way to go. I got to meet a lot of cool people and learned a lot throughout my time working on the project!
 
-{% include figure popup=true image_path="/assets/images/playtest1.jpg" alt="playtesting session at the Aerospace Museum of California"%}
+{% include figure popup=true image_path="/assets/images/playtest1.JPG" alt="playtesting session at the Aerospace Museum of California"%}
 
-{% include figure popup=true image_path="/assets/images/playtest2.jpg" alt="playtesting session at the Aerospace Museum of California"%}
+{% include figure popup=true image_path="/assets/images/playtest2.JPG" alt="playtesting session at the Aerospace Museum of California"%}
 
-{% include figure popup=true image_path="/assets/images/playtest3.jpg" alt="playtesting session at the Aerospace Museum of California" caption="Hey, that's me on the very right!"%}
+{% include figure popup=true image_path="/assets/images/playtest3.JPG" alt="playtesting session at the Aerospace Museum of California" caption="Hey, that's me on the very right!"%}
 
 **Links:**
 * [Aerospace VR][aerospace-vr]
